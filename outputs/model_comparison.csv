@@ -1,0 +1,7 @@
+Model,MAE,RMSE,R2 Score,Training Time (s),Model Size (MB)
+Random Forest (Baseline Unpruned),1077.91,2787.82,0.984923,185.4,885.0
+Optimized Random Forest,1318.35,2818.66,0.984588,13.97,60.73
+Extra Trees,1409.28,2930.16,0.983344,13.51,74.02
+Decision Tree,1596.66,3363.02,0.97806,1.28,0.44
+HistGradientBoosting,2091.9,3593.83,0.974945,5.36,0.43
+Linear Regression,4553.29,6761.71,0.911305,0.71,0.0

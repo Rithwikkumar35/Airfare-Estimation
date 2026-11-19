@@ -1,0 +1,122 @@
+{
+  "project_name": "AeroFare",
+  "title": "Airfare Component Price Estimation Using Supervised Machine Learning",
+  "course": "INT395 - Supervised Learning",
+  "institution": "Lovely Professional University",
+  "developer": "Rithwikkumar35",
+  "model_name": "Optimized Random Forest",
+  "scikit_learn_version": "1.6.0",
+  "dataset_rows": 300153,
+  "training_samples": 240122,
+  "test_samples": 60031,
+  "test_split_ratio": 0.2,
+  "random_state": 42,
+  "model_size_mb": 60.73,
+  "metrics": {
+    "mae": 1318.35,
+    "rmse": 2818.66,
+    "r2_score": 0.984588
+  },
+  "baseline_comparison": {
+    "linear_regression_mae": 4553.29,
+    "linear_regression_r2": 0.911305,
+    "baseline_unpruned_rf_mae": 1077.91,
+    "baseline_unpruned_rf_r2": 0.984923
+  },
+  "features": {
+    "numerical": [
+      "duration",
+      "days_left"
+    ],
+    "categorical": [
+      "airline",
+      "source_city",
+      "departure_time",
+      "stops",
+      "arrival_time",
+      "destination_city",
+      "class"
+    ],
+    "all_features": [
+      "airline",
+      "source_city",
+      "departure_time",
+      "stops",
+      "arrival_time",
+      "destination_city",
+      "class",
+      "duration",
+      "days_left"
+    ]
+  },
+  "categories": {
+    "airline": [
+      "AirAsia",
+      "Air_India",
+      "GO_FIRST",
+      "Indigo",
+      "SpiceJet",
+      "Vistara"
+    ],
+    "source_city": [
+      "Bangalore",
+      "Chennai",
+      "Delhi",
+      "Hyderabad",
+      "Kolkata",
+      "Mumbai"
+    ],
+    "departure_time": [
+      "Afternoon",
+      "Early_Morning",
+      "Evening",
+      "Late_Night",
+      "Morning",
+      "Night"
+    ],
+    "stops": [
+      "one",
+      "two_or_more",
+      "zero"
+    ],
+    "arrival_time": [
+      "Afternoon",
+      "Early_Morning",
+      "Evening",
+      "Late_Night",
+      "Morning",
+      "Night"
+    ],
+    "destination_city": [
+      "Bangalore",
+      "Chennai",
+      "Delhi",
+      "Hyderabad",
+      "Kolkata",
+      "Mumbai"
+    ],
+    "class": [
+      "Business",
+      "Economy"
+    ]
+  },
+  "numerical_ranges": {
+    "duration": {
+      "min": 0.83,
+      "max": 49.83,
+      "mean": 12.221020812718846
+    },
+    "days_left": {
+      "min": 1,
+      "max": 49
+    }
+  },
+  "target_variable": "price",
+  "target_summary": {
+    "min": 1105.0,
+    "max": 123071.0,
+    "mean": 20889.660523133203,
+    "median": 7425.0
+  },
+  "created_at": "2026-11-18T17:11:29Z"
+}

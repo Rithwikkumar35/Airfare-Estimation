@@ -1,0 +1,62 @@
+{
+  "status": "success",
+  "execution_date": "2026-11-18 22:41:29",
+  "selected_model": "Optimized Random Forest",
+  "best_model_file": "best_model.pkl",
+  "size_mb": 60.73,
+  "comparison": [
+    {
+      "Model": "Linear Regression",
+      "MAE": 4553.29,
+      "RMSE": 6761.71,
+      "R2 Score": 0.911305,
+      "Training Time (s)": 0.71,
+      "Model Size (MB)": 0.0
+    },
+    {
+      "Model": "Decision Tree",
+      "MAE": 1596.66,
+      "RMSE": 3363.02,
+      "R2 Score": 0.97806,
+      "Training Time (s)": 1.28,
+      "Model Size (MB)": 0.44
+    },
+    {
+      "Model": "HistGradientBoosting",
+      "MAE": 2091.9,
+      "RMSE": 3593.83,
+      "R2 Score": 0.974945,
+      "Training Time (s)": 5.36,
+      "Model Size (MB)": 0.43
+    },
+    {
+      "Model": "Extra Trees",
+      "MAE": 1409.28,
+      "RMSE": 2930.16,
+      "R2 Score": 0.983344,
+      "Training Time (s)": 13.51,
+      "Model Size (MB)": 74.02
+    },
+    {
+      "Model": "Optimized Random Forest",
+      "MAE": 1318.35,
+      "RMSE": 2818.66,
+      "R2 Score": 0.984588,
+      "Training Time (s)": 13.97,
+      "Model Size (MB)": 60.73
+    },
+    {
+      "Model": "Random Forest (Baseline Unpruned)",
+      "MAE": 1077.91,
+      "RMSE": 2787.82,
+      "R2 Score": 0.984923,
+      "Training Time (s)": 185.4,
+      "Model Size (MB)": 885.0
+    }
+  ],
+  "data_leakage_audit": {
+    "split_type": "random_stratified_equivalent",
+    "leakage_risk_discussed": true,
+    "group_leakage_notes": "Random train-test splitting preserves flight schedules across dates. Grouped splitting by date or flight number represents an out-of-distribution evaluation."
+  }
+}

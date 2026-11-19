@@ -1,0 +1,10 @@
+Category,Subcategory,Count,MAE,RMSE,R2
+Overall Test Set,All Flights,60031,1318.35,2818.66,0.9846
+Travel Class,Business,18715,2496.73,4558.38,N/A
+Travel Class,Economy,41316,784.57,1459.93,N/A
+Booking Window,1–7 days,6414,2756.65,N/A,N/A
+Booking Window,8–14 days,8538,1652.01,N/A,N/A
+Booking Window,15–21 days,9075,1316.09,N/A,N/A
+Booking Window,22–30 days,11806,995.01,N/A,N/A
+Booking Window,31–40 days,12914,945.56,N/A,N/A
+Booking Window,41–49 days,11284,1015.08,N/A,N/A
